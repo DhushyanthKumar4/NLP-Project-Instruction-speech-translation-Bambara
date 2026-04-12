@@ -1,0 +1,44 @@
+Objective
+Build a system that translates spoken Bambara sentences into English, conditioned on an instruction (e.g., “translate to English”, “formal English”, “paraphrase”).
+ 
+Inputs (X)
+•	Audio waveform (Bambara speech)
+•	Instruction text (task specification)
+ 
+Outputs (y)
+•	English translated text (style controlled via instruction)
+ 
+Dataset (Bambara Speech Translation)
+Fields:
+•	audio → speech input
+•	duration → audio length
+•	text → clean transcript
+•	label-v1, label-v2 → noisy transcript variants
+•	translation → English translation
+ 
+DL/NLP Type
+•	Supervised sequence-to-sequence
+•	Multimodal: Audio + Instruction → Text
+•	Instruction-conditioned generation
+ 
+Business / Research Metrics
+•	Primary:
+o	BLEU
+o	chrF
+o	TER
+•	Secondary:
+o	WER (speech recognition quality)
+o	Instruction adherence accuracy
+•	Optional:
+o	Robustness to noisy transcripts
+ 
+Constraints
+•	Low-resource language
+•	Noisy transcript variants (v1, v2)
+•	Variable-length audio
+•	Limited compute (GPU memory)
+ 
+Success Criteria
+•	BLEU ≥ 25 on test set
+•	Instruction adherence ≥ 95%
+•	Robust performance across noisy inputs
