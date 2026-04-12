@@ -1,0 +1,14 @@
+torch
+transformers
+torchaudio
+librosa
+datasets
+sentencepiece
+scikit-learn
+numpy
+pandas
+matplotlib
+seaborn
+optuna
+jiwer
+evaluate
